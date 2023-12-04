@@ -35,9 +35,7 @@ public class Dec01 : ISolution
         int firstDigitDigitIndex = 0;
         int lastDigitDigitIndex = 0;
         foreach (var code in allCodes)
-        {
-            firstDigitDigitIndex = code.IndexOf(code.First(c => Char.IsDigit(c)));
-            lastDigitDigitIndex = code.LastIndexOf(code.Last(c => Char.IsDigit(c)));
+        {            
             int firstStringDigitIndex = int.MaxValue;
             int lastStringDigitIndex = -1;
             string firstStringDigit = "";
@@ -56,6 +54,8 @@ public class Dec01 : ISolution
                     lastStringDigit = digit;
                 }
             }
+            firstDigitDigitIndex = code.IndexOf(code.First(c => Char.IsDigit(c)));
+            lastDigitDigitIndex = code.LastIndexOf(code.Last(c => Char.IsDigit(c)));
             int firstDigit = firstDigitDigitIndex < firstStringDigitIndex ? code[firstDigitDigitIndex] - '0' : Array.IndexOf(stringDigits, firstStringDigit) + 1;
             int lastDigit = lastDigitDigitIndex > lastStringDigitIndex ? code[lastDigitDigitIndex] - '0' : Array.IndexOf(stringDigits, lastStringDigit) + 1;
             answer2 += (firstDigit * 10) + lastDigit;
