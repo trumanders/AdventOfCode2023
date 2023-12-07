@@ -1,4 +1,7 @@
-﻿namespace AdventOfCode2023;
+﻿using System.Dynamic;
+using System.Net.NetworkInformation;
+
+namespace AdventOfCode2023;
 
 public class Dec03 : ISolution
 {
