@@ -7,8 +7,8 @@
             List<ISolution> allSolutions = new List<ISolution>();
             allSolutions.Add(new Dec01());
             allSolutions.Add(new Dec02());
-            //allSolutions.Add(new Dec03());
-            //allSolutions.Add(new Dec04());
+            allSolutions.Add(new Dec03());
+            allSolutions.Add(new Dec04());
             //allSolutions.Add(new Dec05());
             //allSolutions.Add(new Dec06());
             //allSolutions.Add(new Dec07());
