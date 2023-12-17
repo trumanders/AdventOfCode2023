@@ -10,8 +10,8 @@
             //allSolutions.Add(new Dec03());
             //allSolutions.Add(new Dec04());
             //allSolutions.Add(new Dec05());
-            allSolutions.Add(new Dec06());
-            //allSolutions.Add(new Dec07());
+            //allSolutions.Add(new Dec06());
+            allSolutions.Add(new Dec07());
             //allSolutions.Add(new Dec08());
             //allSolutions.Add(new Dec09());
             //allSolutions.Add(new Dec10());
